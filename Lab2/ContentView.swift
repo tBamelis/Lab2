@@ -14,6 +14,15 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            TabView
+            {
+                Tab("Departure", systemImage: "airplane.departure"){}
+                Tab("Info",systemImage: "info.bubble"){}
+                Tab("Return",systemImage: "airplane.arrival"){}
+                    
+            }
+            
+
         }
         .padding()
     }
